@@ -1,0 +1,104 @@
+
+
+header{
+    padding: 10px ;
+    font-size: 25px;
+    text-align: center;
+    background-color:  #C7CEEA;
+    color:#6B594D;
+    text-decoration: none;
+}
+
+
+
+.main{
+    padding-left: 25%;
+    padding-right: 25%;
+    background-image: url(./images/ToyStoryBackground.jfif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container {
+  display: flex;
+  margin-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #C7CEEA;
+}
+
+.item {
+  position: relative;
+  display: block;
+  flex: 1 1 0px;
+  transition: transform 500ms;
+}
+
+.container:focus-within .item,
+.container:hover .item {
+  transform: translateX(-25%);
+}
+
+.item:focus ~ .item,
+.item:hover ~ .item {
+  transform: translateX(25%);
+}
+
+.container .item:focus,
+.container .item:hover {
+  transform: scale(1.5);
+  z-index: 1;
+}
+
+html {
+  height: 100%;
+  margin: auto;
+  width: 960px;
+}
+
+body {
+  background-image: url(./images/ToyStoryBackground.jfif);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  ;
+}
+
+.item img {
+  display: block;
+  max-width: 100%;
+  max-height: 150px;
+}
+
+.review {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 110px;
+  background-color:  #C7CEEA;
+  color:#6B594D;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+hr.new1{
+  border-top: 1px;
+  border-color: #6B5570;
+  border-radius: 5px;
+}
+
+a:link {
+  color:#6B594D ;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #6B594D;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: purple;
+  background-color: transparent;
+  text-decoration: underline;
+}
